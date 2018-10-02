@@ -32,5 +32,20 @@ instead of just remove all the spaces completely.
 * Good : `./website/ScriptReference/api/Hello_World.html`
 * Good : `./website/ScriptReference/api/HelloWorld.html`
 
+
+## Run the application ##
+Before you run the application, make sure you install node.js to 
+your OS environment. Step one, run `./scripts/setup.bat`, this 
+file will install all the dependencies you need for this project. 
+Step two, run `./scripts/run.bat` in order to start the server. 
+If you are running of Linux environment just execute the same scripts 
+but with `.sh` extension behind. Step three, run you favorite web 
+browser with `localhost:3000` and the following screen should appear 
+infront of you. 
+
+<img src="./screenshot/demo01.png"/>
+<img src="./screenshot/demo02.png"/>
+
+
 ## Example ##
-N/A
+* JCSUnity-Scrpting-Manual : https://github.com/jcs090218/JCSUnity-Scripting-Manual
