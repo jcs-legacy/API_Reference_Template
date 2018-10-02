@@ -71,5 +71,15 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 <img src="./screenshot/code_demo.png" width="465" height="245"/>
 
 
+## Configuration ##
+If you do not like any of these settings, checkout `./config.js` and `./website/js/config.js`. 
+You can change the path, manual name, version number, copyright text, etc. 
+Basically anything you need to make a API reference document website. 
+
+If you do not like style you can load you own CSS file at `./website/css-lib.html`. 
+Or change the CSS property in `./website/css/style.css`. For the content's style can 
+be found in `./website/css/content.css`. 
+
+
 ## Example ##
 * JCSUnity-Scrpting-Manual : https://github.com/jcs090218/JCSUnity-Scripting-Manual
