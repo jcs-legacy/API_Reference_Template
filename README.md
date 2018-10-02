@@ -43,8 +43,8 @@ but with `.sh` extension behind. Step three, run you favorite web
 browser with `localhost:3000` and the following screen should appear 
 infront of you. 
 
-<img src="./screenshot/demo01.png"/>
-<img src="./screenshot/demo02.png"/>
+<img src="./screenshot/demo_01.png"/>
+<img src="./screenshot/demo_02.png"/>
 
 
 ## Example ##
