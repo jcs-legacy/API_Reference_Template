@@ -48,6 +48,28 @@ Manual Screen                                                   | Scripting Refe
 <img src="./screenshot/demo_01.png" width="465" height="245"/>  |  <img src="./screenshot/demo_02.png" width="465" height="245"/>
 
 
+## Code Section CSS Support ##
+The client will automatically convert spaces to HTML seeable spaces (&nbsp). 
+And convert `\n` to `<br/>`. Here is the example code if you wish 
+to apply these feature in you document content page. Use the `code-block` 
+class to implement a code text area. Use `code-inline` for inline code. 
+
+```
+Code: <div class="code-inline">Inline code</div>
+
+<div class="code-block">
+    /**
+     * Code comment.
+     * @param args : Parameters array.
+     */
+    Code block
+  
+</div>
+```
+This file in under `./website/ScriptReference/api/ExampleReference.html`
+
+<img src="./screenshot/code_demo.png" width="465" height="245"/>
+
 
 ## Example ##
 * JCSUnity-Scrpting-Manual : https://github.com/jcs090218/JCSUnity-Scripting-Manual
