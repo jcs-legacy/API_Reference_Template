@@ -25,14 +25,14 @@ instead of just remove all the spaces completely.
 <br/>
 
 ### Directory ###
-Bad : `./website/ScriptReference/api/Hello World`
-Good : `./website/ScriptReference/api/Hello_World`
-Good : `./website/ScriptReference/api/HelloWorld`
+Bad : `./website/ScriptReference/api/Hello World` <br/>
+Good : `./website/ScriptReference/api/Hello_World` <br/> 
+Good : `./website/ScriptReference/api/HelloWorld` <br/>
 
 ### File ###
-Bad : `./website/ScriptReference/api/Hello World.html`
-Good : `./website/ScriptReference/api/Hello_World.html`
-Good : `./website/ScriptReference/api/HelloWorld.html`
+Bad : `./website/ScriptReference/api/Hello World.html` <br/>
+Good : `./website/ScriptReference/api/Hello_World.html` <br/>
+Good : `./website/ScriptReference/api/HelloWorld.html` <br/>
 
 ## Example ##
 N/A
