@@ -22,8 +22,6 @@ should acknowledge the changes and display it in the webpage. Importantly
 that the path cannot contain any space character. Please use underscore 
 instead of just remove all the spaces completely.
 
-<br/>
-
 ### Directory ###
 * Bad : `./website/ScriptReference/api/Hello World`
 * Good : `./website/ScriptReference/api/Hello_World`
