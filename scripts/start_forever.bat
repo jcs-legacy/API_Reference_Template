@@ -1,7 +1,7 @@
 @echo off
 :: ========================================================================
-:: $File: run.bat $
-:: $Date: 2018-09-27 16:02:55 $
+:: $File: start_forever.bat $
+:: $Date: 2018-10-04 21:34:01 $
 :: $Revision: $
 :: $Creator: Jen-Chieh Shen $
 :: $Notice: See LICENSE.txt for modification and distribution information
@@ -13,4 +13,4 @@
 cd ..
 
 :: Run the server.
-node main.js
+forever start main.js -o log.txt

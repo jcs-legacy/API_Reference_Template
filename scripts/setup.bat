@@ -1,7 +1,7 @@
 @echo off
 :: ========================================================================
 :: $File: setup.bat $
-:: $Date: 2018-10-01 16:55:31 $
+:: $Date: 2018-09-27 17:04:31 $
 :: $Revision: $
 :: $Creator: Jen-Chieh Shen $
 :: $Notice: See LICENSE.txt for modification and distribution information
@@ -12,6 +12,9 @@
 :: Back to root directory.
 cd ..
 
-:: Install all dependencies.
+:: Install global dependecies.
+npm install forever -g
+
+:: Install all dependecies.
 npm install express --save
 npm install directory-tree --save
