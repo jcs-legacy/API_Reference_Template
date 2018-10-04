@@ -38,14 +38,22 @@ Before you run the application, make sure you install node.js to
 your OS environment. Step one, run `./scripts/setup.bat`, this 
 file will install all the dependencies you need for this project. 
 Step two, run `./scripts/run.bat` in order to start the server. 
-If you are running of Linux environment just execute the same scripts 
-but with `.sh` extension behind. Step three, run you favorite web 
-browser with `localhost:3000` and the following screen should appear 
-infront of you. 
+If you are running of Linux environment with bash installed, just 
+execute the same scripts but with `.sh` extension behind. 
+Step three, run you favorite web browser with `localhost:3000` and 
+the following screens should appear infront of you. 
 
 Manual Screen                                                   | Scripting Reference Screen
 :--------------------------------------------------------------:|:----------------------------------------------------------------------------:|
 <img src="./screenshot/demo_01.png" width="465" height="245"/>  |  <img src="./screenshot/demo_02.png" width="465" height="245"/>
+
+
+## Deploy on to server ##
+If you are ready to deploy your scripting manual application, run 
+`./scripts/start_forever.bat` and the server will run even you terminated 
+the console. If you want to stop the server, run `./scripts/stop_forever.bat` 
+to terminate the previous started server. If you are on linux distro 
+with bash installed, run the same script but with `.sh` extension behind. 
 
 
 ## Code Section CSS Support ##
