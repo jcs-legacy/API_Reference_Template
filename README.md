@@ -76,7 +76,7 @@ Code: <div class="code-inline">Inline code</div>
 ```
 This file in under `./website/ScriptReference/api/ExampleReference.html`
 
-<img src="./screenshot/code_demo.png" width="465" height="245"/>
+<img src="./screenshot/code_demo.png" width="930" height="490"/>
 
 
 ## Configuration ##
