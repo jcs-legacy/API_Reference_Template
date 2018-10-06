@@ -103,7 +103,7 @@
 
     let dirLayer = 0;
 
-    // Initialize as hide.
+    // Initialize by URL param.
     sbDir.each(function () {
       let items = $(this).find('ul');
       let arrow = $(this).find('.arrow');
@@ -140,6 +140,28 @@
       loadContentPage(contentPageName);
 
       addParamToURL("page", contentPage, true);
+    });
+    
+    let currentContentPage = getUrlParameter('page');
+
+    let selectedFilename = [];
+
+    if (currentContentPage != null) {
+      selectedFilename = currentContentPage.split('-');
+      selectedFilename = selectedFilename[selectedFilename.length - 1];
+    }
+
+    // Check if current file selected. Highlight it!
+    sbFile.each(function () {
+      let filePath = $(this).attr('id');
+
+      let filename = filePath.split('-');
+      filename = filename[filename.length - 1];
+
+      if (selectedFilename == filename) {
+        $(this).css('background-color', '#222C37');
+        $(this).css('color', '#FFFFFF');
+      }
     });
   }
   addSBFileButtonEvent();  // Do it once at initialize time.
@@ -376,8 +398,8 @@
 
     url += paramName + "=" + paramValue;
 
-    // Add param without reload page.
-    history.pushState({ }, null, url);
+    // Set URL and reload the page.
+    document.location = url;
   }
 
 
