@@ -161,6 +161,11 @@
       if (selectedFilename == filename) {
         $(this).css('background-color', '#222C37');
         $(this).css('color', '#FFFFFF');
+
+        // Scroll to that file selected.
+        sbContainer.animate({
+          scrollTop: $(this).offset().top
+        });
       }
     });
   }
