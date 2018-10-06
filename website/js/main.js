@@ -159,8 +159,12 @@
       filename = filename[filename.length - 1];
 
       if (selectedFilename == filename) {
+        /* Selected file's CSS configurations. */
         $(this).css('background-color', '#222C37');
         $(this).css('color', '#FFFFFF');
+        $(this).css('padding-left', '10px');
+        $(this).css('margin-top', '5px');
+        $(this).css('margin-bottom', '5px');
 
         // Scroll to that file selected.
         sbContainer.animate({
