@@ -141,7 +141,9 @@ header {
 }
 
 #index-pos li {
-  padding: 4px;
+  padding-top: 5px;
+  margin-right: 5px;
+  padding-bottom: 5px;
 }
 
 .arrow {
@@ -179,7 +181,20 @@ header {
 
 .sb-file:hover {
   text-decoration: underline;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
+}
+
+.sb-file-selected {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #222C37;
+  padding-left: 10px;
+  color: #FFFFFF;
+}
+
+.sb-file-selected:hover {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /* Scrollbar Layers */
@@ -214,7 +229,7 @@ header {
 
 #content-wrapper {
   margin-right: 3%;
-  
+
   /*
    * 3% must be the same as the `margin-right' above.
    * 24% is the width of the scrollbar.
