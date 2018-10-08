@@ -141,7 +141,7 @@
 
       addParamToURL("page", contentPage, true);
     });
-    
+
     let currentContentPage = getUrlParameter('page');
 
     let selectedFilename = [];
@@ -164,8 +164,12 @@
 
         // Scroll to that file selected.
         sbContainer.animate({
-          scrollTop: $(this).offset().top
-        });
+          /*
+           * NOTE(jenchieh): 100 is the height from the header,
+           * and plus 10 just to offset a bit more to look better.
+           */
+          scrollTop: $(this).offset().top - 110
+        }, 500);
       }
     });
   }
@@ -329,7 +333,7 @@
 
     loadContentPage(contentPageName);
   }
-  
+
   /**
    * Load the content HTML file.
    * @param { typename } contentPage : Content page name.
@@ -380,7 +384,7 @@
         });
       });
   }
-  
+
   /**
    * Add a parameter to current URL.
    *
