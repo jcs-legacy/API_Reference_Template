@@ -26,9 +26,6 @@
   var scrollBarTitle = $('#scroll-bar-title');
   var indexPos = $('#index-pos');
 
-  /* Logo */
-  var logo = $('#logo');
-
   /* Content */
   var content = $('#content');
 
@@ -39,9 +36,6 @@
 
 
   //---------------------- Functions ---------------------------//
-
-  // Make logo load the `intro' content.
-  logo.click(function () { loadContentPage(intro_content); });
 
   function showChildren(obj) { obj.children().show(); }
   function hideChildren(obj) { obj.children().hide(); }
@@ -127,15 +121,15 @@
   addSBDirButtonEvent();  // Do it once at initialize time.
 
   function addSBFileButtonEvent() {
-    var sbFile = $('.sb-file');
+    let sbFile = $('.sb-file');
 
     sbFile.click(function (e) {
       // Stop overlaping `div' tag's click event trigger.
       e.stopPropagation();
 
-      var contentPage = $(this).attr('id');
+      let contentPage = $(this).attr('id');
 
-      var contentPageName = contentPage.replace(/-/g, "/");
+      let contentPageName = contentPage.replace(/-/g, "/");
 
       loadContentPage(contentPageName);
 
@@ -206,7 +200,7 @@
         type: 'GET',
         contentType: "application/json",
         success : function (data) {
-          var dir = JSON.parse(data);
+          let dir = JSON.parse(data);
 
           createIndexWithDir(dir.children, indexPos);
 
@@ -232,7 +226,7 @@
         type: 'GET',
         contentType: "application/json",
         success : function (data) {
-          var dir = JSON.parse(data);
+          let dir = JSON.parse(data);
 
           createIndexWithDir(dir.children, indexPos);
 
@@ -281,7 +275,7 @@
         newPath = newPath.replace(/\.[^/.]+$/, "");
       }
 
-      var dirOrFileName = pathObj.name;
+      let dirOrFileName = pathObj.name;
       dirOrFileName = dirOrFileName.replace(/\.[^/.]+$/, "");  // Remove extension if there is.
 
       if (checkPageFound(manualPage)) {
@@ -291,9 +285,9 @@
 
       parent.append("<li class=" + sbType +" id=" + newPath + "></li>");
 
-      var newPathNode = $('#' + newPath);
+      let newPathNode = $('#' + newPath);
 
-      var htmlDirOrFileName = "<span>" + dirOrFileName + "</span>";
+      let htmlDirOrFileName = "<span>" + dirOrFileName + "</span>";
 
       if (isDir) {
         htmlDirOrFileName = "<div class='arrow'>+</div>" + htmlDirOrFileName;
@@ -319,7 +313,6 @@
    * content page.
    */
   function loadCurrentContentPage() {
-
     // Get the current content page in the URL.
     let currentContentPage = getUrlParameter('page');
 
@@ -339,7 +332,7 @@
    * @param { typename } contentPage : Content page name.
    */
   function loadContentPage(contentPage) {
-    var fullPath = contentPage + content_extension;
+    let fullPath = contentPage + content_extension;
 
     // Load content page base on the current page tab.
     if (contentPage != intro_content) {
@@ -367,21 +360,25 @@
           copyright.text(copyright_text);
         }
 
-        let codeBlocks = $('.code-block');
-        codeBlocks.each(function (index) {
-          let codeText = $(this).text();
-          // Replace all line break to '<br/>'.
-          codeText = codeText.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+        /* Code block logic here.. */
+        {
+          let codeBlocks = $('.code-block');
 
-          // Replace all space to &nbsp.
-          codeText = codeText.replace(/\s/g, '&nbsp;');
+          codeBlocks.each(function (index) {
+            let codeText = $(this).text();
+            // Replace all line break to '<br/>'.
+            codeText = codeText.replace(/(?:\r\n|\r|\n)/g, '<br/>');
 
-          // Clean the text.
-          $(this).text("");
+            // Replace all space to &nbsp.
+            codeText = codeText.replace(/\s/g, '&nbsp;');
 
-          // Turn it into HTML.
-          $(this).html(codeText);
-        });
+            // Clean the text.
+            $(this).text("");
+
+            // Turn it into HTML.
+            $(this).html(codeText);
+          });
+        }
       });
   }
 
@@ -393,15 +390,15 @@
    * @param { boolean } clean : Clean param?
    */
   function addParamToURL(paramName, paramValue, clean) {
-    var url = document.location.href;
+    let url = document.location.href;
 
     // Remove all parameters?
     if (clean)
       url = url.split('?')[0];
 
-    if(url.indexOf('?') != -1) {
+    if (url.indexOf('?') != -1) {
       url += "&";
-    }else{
+    } else {
       url += "?";
     }
 
@@ -430,8 +427,8 @@
  * @param { string } paramName : name of the parameter.
  */
 function getUrlParameter(paramName) {
-  var sPageURL = decodeURIComponent(window.location.search.substring(1));
-  var sURLVariables = sPageURL.split('&');
+  let sPageURL = decodeURIComponent(window.location.search.substring(1));
+  let sURLVariables = sPageURL.split('&');
 
   for (let index = 0; index < sURLVariables.length; index++) {
     let sParameterName = sURLVariables[index].split('=');
@@ -448,9 +445,12 @@ function getUrlParameter(paramName) {
  * Clean all URL parameters.
  */
 function cleanParamFromURL() {
-  var url = document.location.href;
-  url = url.split('?')[0];
+  let url = document.location.href;
 
-  // Remove param without reload page.
-  history.pushState({ }, null, url);
+  let splitUrl = url.split('?');
+  url = splitUrl[0];
+
+  // Make sure there are not param after url.
+  if (splitUrl.length == 2)
+    document.location = url;
 }
