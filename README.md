@@ -66,8 +66,8 @@ the code block.
 |---------------:|------------:|-----------|
 |                | &amp;nbsp;  |           |
 | \n • \r • \r\n | &lt;br/&gt; |           |
-|            -<- |        &lt; | <         |
-|            ->- |        &gt; | >         |
+|            -<- |    &amp;lt; | <         |
+|            ->- |    &amp;gt; | >         |
 
 Here is the example code if you wish to apply these feature in you 
 document content page. Use the `code-block` class to implement a 
