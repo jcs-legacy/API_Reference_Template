@@ -80,12 +80,13 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 
 ### Code Conversion List ###
 
-|     Entity |    Code |
-|-----------:|--------:|
-|            | & nbsp; |
-| \n|\r|\r\n | <br/>   |
-|          < |     -<- |
-|          > |     ->- |
+
+|         Entity |        Code |
+|---------------:|------------:|
+|                | &amp;nbsp;  |
+| \n • \r • \r\n | &lt;br/&gt; |
+|              < |         -<- |
+|              > |         ->- |
 
 
 ## Configuration ##
