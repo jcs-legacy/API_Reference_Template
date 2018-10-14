@@ -57,18 +57,21 @@ with bash installed, run the same script but with `.sh` extension behind.
 
 
 ## Code block display on website ##
-### Code Conversion List ###
-|         Entity |        Code |
-|---------------:|------------:|
-|                | &amp;nbsp;  |
-| \n • \r • \r\n | &lt;br/&gt; |
-|              < |         -<- |
-|              > |         ->- |
+The client will automatically convert these HTML string to entity 
+string. So you do not have to do all the translation yourself in 
+the code block.
 
-The client will automatically convert spaces to HTML seeable spaces (&nbsp).
-And convert `\n` to `<br/>`. Here is the example code if you wish
-to apply these feature in you document content page. Use the `code-block`
-class to implement a code text area. Use `code-inline` for inline code.
+### Code Conversion List ###
+|           HTML |      Entity | Displayed |
+|---------------:|------------:|-----------|
+|                | &amp;nbsp;  |           |
+| \n • \r • \r\n | &lt;br/&gt; |           |
+|            -<- |        &lt; | <         |
+|            ->- |        &gt; | >         |
+
+Here is the example code if you wish to apply these feature in you 
+document content page. Use the `code-block` class to implement a 
+code text area. Use `code-inline` for inline code.
 
 ```
 Code: <div class="code-inline">Inline code</div>
