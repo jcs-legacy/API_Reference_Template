@@ -57,6 +57,14 @@ with bash installed, run the same script but with `.sh` extension behind.
 
 
 ## Code block display on website ##
+### Code Conversion List ###
+|         Entity |        Code |
+|---------------:|------------:|
+|                | &amp;nbsp;  |
+| \n • \r • \r\n | &lt;br/&gt; |
+|              < |         -<- |
+|              > |         ->- |
+
 The client will automatically convert spaces to HTML seeable spaces (&nbsp).
 And convert `\n` to `<br/>`. Here is the example code if you wish
 to apply these feature in you document content page. Use the `code-block`
@@ -77,16 +85,6 @@ Code: <div class="code-inline">Inline code</div>
 This file in under `./website/ScriptReference/api/ExampleReference.html`
 
 <img src="./screenshot/content_demo.png" width="930" height="490"/>
-
-### Code Conversion List ###
-
-
-|         Entity |        Code |
-|---------------:|------------:|
-|                | &amp;nbsp;  |
-| \n • \r • \r\n | &lt;br/&gt; |
-|              < |         -<- |
-|              > |         ->- |
 
 
 ## Configuration ##
