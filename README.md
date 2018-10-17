@@ -90,6 +90,14 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 <img src="./screenshot/content_demo.png" width="930" height="490"/>
 
 
+## Directing to other page ##
+If you wish to direct to other page, you can do.
+```
+<!-- This will direct user to ./api/HelloWorld/TestRef.html page. -->
+<a href="?page=HelloWorld-TestRef">TestRef</a>
+```
+
+
 ## Configuration ##
 If you do not like any of these settings, checkout `./config.js` and `./website/js/config.js`.
 You can change the path, manual name, version number, copyright text, etc.
