@@ -91,9 +91,9 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 
 
 ## Directing to other page ##
-If you wish to direct to other page, you can do.
+If you wish to direct to other page, you can do. This will direct 
+user to `./api/HelloWorld/TestRef.html` page.
 ```
-<!-- This will direct user to ./api/HelloWorld/TestRef.html page. -->
 <a href="?page=HelloWorld-TestRef">TestRef</a>
 ```
 
