@@ -99,6 +99,11 @@ user to `./api/HelloWorld/TestRef.html` page.
 <a href="?page=HelloWorld-TestRef">TestRef</a>
 ```
 
+## Search Engine ##
+Search engine is implemented by simply comparing the file name with keyword 
+case insensitively.
+<img src="./screenshot/search_demo.png" width="930" height="490"/>
+
 
 ## Configuration ##
 If you do not like any of these settings, checkout `./config.js` and `./website/js/config.js`.
