@@ -20,19 +20,7 @@ and `jQuery`. You will also need the minimal knowledge of these tools.
 All the api components will be search under `./website/ScriptReference/api`
 directory. The manual components will be search under `./website/Manual/doc`
 directory. Make all the API references into a HTML files then the server
-should acknowledge the changes and display it in the webpage. Importantly
-that the path cannot contain any space character. Please use underscore
-instead of just remove all the spaces completely.
-
-### Directory ###
-* Bad : `./website/ScriptReference/api/Hello World`
-* Good : `./website/ScriptReference/api/Hello_World`
-* Good : `./website/ScriptReference/api/HelloWorld`
-
-### File ###
-* Bad : `./website/ScriptReference/api/Hello World.html`
-* Good : `./website/ScriptReference/api/Hello_World.html`
-* Good : `./website/ScriptReference/api/HelloWorld.html`
+should acknowledge the changes and display it in the webpage. 
 
 
 ## Run the application ##
