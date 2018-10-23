@@ -81,10 +81,17 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 
 
 ## Directing to other page ##
-If you wish to direct to other page, you can do. This will direct 
-user to `./api/HelloWorld/TestRef.html` page.
+### Path Keyword Conversion List ###
+| Key  | Entity |
+|------|--------|
+| _sl_ | /      |
+| _sp_ |        |
+
+If you wish to direct to other page, see the code below for example. This 
+line of code will direct user to `./api/HelloWorld/Test Ref.html` page.
 ```
-<a href="?page=HelloWorld-TestRef">TestRef</a>
+<!-- Here _sl_ will convert to slash. And _sp_ will convert to space. -->
+<a href="?page=HelloWorld_sl_Test_sp_Ref">Test Ref</a>
 ```
 
 ## Search Engine ##
