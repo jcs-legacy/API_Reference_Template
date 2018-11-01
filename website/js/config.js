@@ -12,7 +12,23 @@
 
 // Manual config.
 const manual_name = "[Manual Name]";
-const version_manual = "0.0.1";
+
+// Version config.
+const version_title_01 = "[Manual] Version: ";
+const version_title_02 = "";
+const version_title_03 = "";
+const version_title_04 = "";
+const version_title_05 = "";
+const version_title_06 = "";
+const version_title_07 = "";
+
+const version_num_01 = "0.0.1";
+const version_num_02 = "";
+const version_num_03 = "";
+const version_num_04 = "";
+const version_num_05 = "";
+const version_num_06 = "";
+const version_num_07 = "";
 
 // Copyright text to show on the website.
 const copyright_text = "Copyright © [yyyy] [Group Name]. Built: [yyyy-mm-dd].";
