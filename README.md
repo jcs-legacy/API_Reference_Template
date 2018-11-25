@@ -1,5 +1,8 @@
 # API Reference Template #
 
+[![Build Status](https://travis-ci.com/jcs090218/API-Reference-Template.svg?branch=master)](https://travis-ci.com/jcs090218/API-Reference-Template)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 * Demo: <a href="http://www.jcs-profile.com:3000">API_Reference_Template</a>
 
 The goal of this project is for API developer who do not actually
