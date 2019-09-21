@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/jcs090218/API-Reference-Template.svg?branch=master)](https://travis-ci.com/jcs090218/API-Reference-Template)
+[![Release Tag](https://img.shields.io/github/tag/jcs090218/API-Reference-Template.svg?label=release)](https://github.com/jcs090218/API-Reference-Template/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
