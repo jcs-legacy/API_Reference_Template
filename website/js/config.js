@@ -45,8 +45,7 @@ const homepage_text = "api-ref-tem.github";  // Text to show on the browser
 
 // Content extension to load.
 //
-// NOTE(jenchieh): have to be the same with 'server' side's
-// config file.
+// NOTE: have to be the same with 'server' side's config file.
 //
 // SEE : config.js in the project root directory.
 const content_extension = '.md';
