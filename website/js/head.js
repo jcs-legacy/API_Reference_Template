@@ -23,7 +23,6 @@
  * jQuery entry.
  */
 (function ($) {
-
   let jsLib = $('#js-lib');
   let cssLib = $('#css-lib');
 

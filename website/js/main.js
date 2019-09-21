@@ -231,7 +231,7 @@
         sbContainer.animate({
           /*
            * NOTE: 100 is the height from the header, and plus 10 just
-           *  to offset a bit more to look better.
+           * to offset a bit more to look better.
            */
           scrollTop: $(this).offset().top - 110
         }, 500);
@@ -246,7 +246,6 @@
   /* Initialize the page. */
   function initPage() {
     initGlobalPage();
-
     if (checkPageFound(manualPage)) {
       initManulPage();
     } else if (checkPageFound(scriptReferencePage)) {
@@ -326,11 +325,7 @@
 
     let currentDir = "";
 
-    for (let index = 0;
-         index < dir.length;
-         ++index)
-    {
-
+    for (let index = 0; index < dir.length; ++index) {
       let pathObj = dir[index];
 
       if (pathObj.path.charAt(0) != "/")
@@ -351,7 +346,6 @@
 
       /* IMPORTANT: Apply conversion rule. */
       newPath = applyConversionRule(newPath);
-
 
       let dirOrFileName = pathObj.name;
       dirOrFileName = dirOrFileName.replace(/\.[^/.]+$/, "");  // Remove extension if there is.
@@ -691,15 +685,4 @@ function cleanParamFromURL() {
   // Make sure there are not param after url.
   if (splitUrl.length == 2)
     document.location = url;
-}
-
-function removeStyles(el) {
-  el.removeAttribute('style');
-  if (el.childNodes.length > 0) {
-    for (var child in el.childNodes) {
-      /* filter element nodes only */
-      if (el.childNodes[child].nodeType == 1)
-        removeStyles(el.childNodes[child]);
-    }
-  }
 }
