@@ -24,12 +24,14 @@
  */
 (function ($) {
 
-  var cssLib = $('#css-lib');
+  let jsLib = $('#js-lib');
+  let cssLib = $('#css-lib');
 
   /**
    * jQuery program entry.
    */
   function jQueryMain() {
+    jsLib.load('../js-lib.html');
     cssLib.load('../css-lib.html');
   }
   jQueryMain();  // Execute the program entry.
