@@ -18,3 +18,4 @@ npm install forever -g
 :: Install all dependecies.
 npm install express --save
 npm install directory-tree --save
+npm install showdown --save

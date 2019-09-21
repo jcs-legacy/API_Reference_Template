@@ -1,5 +1,5 @@
 <!--
-   - $File: search.html $
+   - $File: search.md $
    - $Date: 2018-10-18 23:15:48 $
    - $Revision: $
    - $Creator: Jen-Chieh Shen $
