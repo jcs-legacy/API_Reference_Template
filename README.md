@@ -26,7 +26,7 @@ and `jQuery`. You will also need the minimal knowledge of these tools.
 
 All the api components will be search under `./website/ScriptReference/api`
 directory. The manual components will be search under `./website/Manual/doc`
-directory. Make all the API references into a HTML files then the server
+directory. Make all the API references into a MD files then the server
 should acknowledge the changes and display it in the webpage. 
 
 
@@ -86,7 +86,7 @@ Code: <div class="code-inline">Inline code</div>
 
 </div>
 ```
-This file in under `./website/ScriptReference/api/ExampleReference.html`
+This file in under `./website/ScriptReference/api/ExampleReference.md`
 
 <img src="./screenshot/content_demo.png" width="930" height="490"/>
 
@@ -101,7 +101,7 @@ This file in under `./website/ScriptReference/api/ExampleReference.html`
 | _sp_ |        |
 
 If you wish to direct to other page, see the code below for example. This 
-line of code will direct user to `./api/HelloWorld/Test Ref.html` page.
+line of code will direct user to `./api/HelloWorld/Test Ref.md` page.
 ```
 <!-- Here _sl_ will convert to slash. And _sp_ will convert to space. -->
 <a href="?page=HelloWorld_sl_Test_sp_Ref">Test Ref</a>
