@@ -13,6 +13,9 @@
 // Manual config.
 const manual_name = "[Manual Name]";
 
+const header_color = '#222C37';
+const arrow_color = '#19E3B1';
+
 // Version config.
 const version_title_01 = "[Manual] Version: ";
 const version_title_02 = "";
