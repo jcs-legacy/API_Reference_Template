@@ -1,19 +1,3 @@
-<!--
-   - $File: Test Ref.html $
-   - $Date: 2018-10-03 00:52:27 $
-   - $Revision: $
-   - $Creator: Jen-Chieh Shen $
-   - $Notice: See LICENSE.txt for modification and distribution information
-   -                   Copyright © 2018 by Shen, Jen-Chieh $
--->
+# Test Ref
 
-
-<div id="content-header">
-  <h1>
-    Test Ref
-  </h1>
-</div>
-
-<p>
-  TestRef scripting reference here!
-</p>
+TestRef scripting reference here!
