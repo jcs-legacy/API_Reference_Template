@@ -9,14 +9,15 @@
 
 "use strict";
 
-
-// Manual config.
+// Manual
 const manual_name = "[Manual Name]";
 
+// Theme
 const header_color = '#222C37';
 const arrow_color = '#19E3B1';
+const th_color = '#A2F2DE';
 
-// Version config.
+// Version Information
 const version_title_01 = "[Manual] Version: ";
 const version_title_02 = "";
 const version_title_03 = "";
