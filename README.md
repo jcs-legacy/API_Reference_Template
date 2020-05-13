@@ -84,4 +84,4 @@ be found in `./website/css/content.css`.
 
 ## Example
 
-* JCSUnity-Scrpting-Manual : https://github.com/jcs090218/JCSUnity-Scripting-Manual
+* [JCSUnity-Scrpting-Manual](https://github.com/jcs090218/JCSUnity-Scripting-Manual)
