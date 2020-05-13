@@ -5,14 +5,13 @@
 
 # API Reference Template
 
-* Demo: <a href="http://www.jcs-profile.com:3000">API_Reference_Template</a>
+* Demo: [API_Reference_Template](http://www.jcs-profile.com:3000)
 
 The goal of this project is for API developer who do not actually
 care too much about the looks of their API documents. This project
 provide a simple API reference website template, so once the developer
 have done developed their API. They can use this website(template) to
-fast create their API document webpage. <br/><br/>
-
+fast create their API document webpage.
 
 ## Acknowledge
 
@@ -21,14 +20,12 @@ some knowledge of `express.js` in order to expand the application
 if you need to. The frontend are only using the basic `HTML`, `CSS`,
 and `jQuery`. You will also need the minimal knowledge of these tools.
 
-
 ## How to use?
 
 All the api components will be search under `./website/ScriptReference/api`
 directory. The manual components will be search under `./website/Manual/doc`
 directory. Make all the API references into a MD files then the server
 should acknowledge the changes and display it in the webpage. 
-
 
 ## Run the application
 
@@ -45,7 +42,6 @@ Manual Screen                                                   | Scripting Refe
 :--------------------------------------------------------------:|:----------------------------------------------------------------------------:|
 <img src="./screenshot/demo_01.png" width="465" height="245"/>  |  <img src="./screenshot/demo_02.png" width="465" height="245"/>
 
-
 ## Deploy on to server
 
 If you are ready to deploy your scripting manual application, run
@@ -53,7 +49,6 @@ If you are ready to deploy your scripting manual application, run
 the console. If you want to stop the server, run `./scripts/stop_forever.bat`
 to terminate the previous started server. If you are on linux distro
 with bash installed, run the same script but with `.sh` extension behind.
-
 
 ## Directing to other page
 
@@ -77,7 +72,6 @@ Search engine is implemented by simply comparing the file name with keyword
 case insensitively.
 <img src="./screenshot/search_demo.png" width="930" height="490"/>
 
-
 ## Configuration
 
 If you do not like any of these settings, checkout `./config.js` and `./website/js/config.js`.
@@ -87,7 +81,6 @@ Basically anything you need to make a API reference document website.
 If you do not like style you can load you own CSS file at `./website/css-lib.html`.
 Or change the CSS property in `./website/css/style.css`. For the content's style can
 be found in `./website/css/content.css`.
-
 
 ## Example
 
