@@ -55,42 +55,6 @@ to terminate the previous started server. If you are on linux distro
 with bash installed, run the same script but with `.sh` extension behind.
 
 
-## Code block display on website
-
-The client will automatically convert these HTML string to entity 
-string. So you do not have to do all the translation yourself in 
-the code block.
-
-### Code Conversion List
-
-|           HTML |      Entity | Displayed |
-|---------------:|------------:|-----------|
-|                | &amp;nbsp;  |           |
-| \n • \r • \r\n | &lt;br/&gt; |           |
-|            -<- |    &amp;lt; | <         |
-|            ->- |    &amp;gt; | >         |
-
-Here is the example code if you wish to apply these feature in you 
-document content page. Use the `code-block` class to implement a 
-code text area. Use `code-inline` for inline code.
-
-```
-Code: <div class="code-inline">Inline code</div>
-
-<div class="code-block">
-    /**
-     * Code comment.
-     * @param args : Parameters array.
-     */
-    Code block
-
-</div>
-```
-This file in under `./website/ScriptReference/api/ExampleReference.md`
-
-<img src="./screenshot/content_demo.png" width="930" height="490"/>
-
-
 ## Directing to other page
 
 ### Path Keyword Conversion List
@@ -104,7 +68,7 @@ If you wish to direct to other page, see the code below for example. This
 line of code will direct user to `./api/HelloWorld/Test Ref.md` page.
 ```
 <!-- Here _sl_ will convert to slash. And _sp_ will convert to space. -->
-<a href="?page=HelloWorld_sl_Test_sp_Ref">Test Ref</a>
+[Test Ref](?page=HelloWorld_sl_Test_sp_Ref)
 ```
 
 ## Search Engine
