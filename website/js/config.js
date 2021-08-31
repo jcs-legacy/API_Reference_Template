@@ -10,7 +10,7 @@
 "use strict";
 
 /* Manual */
-const manual_name = "[Manual Name]";
+const manual_name = '[Manual Name]';
 
 /* Theme */
 const header_color = '#222C37';
@@ -19,32 +19,32 @@ const th_show      = true;       // table header
 const th_color     = '#A2F2DE';  // table header color
 
 /* Version */
-const version_title_01 = "[Manual] Version: ";
-const version_title_02 = "";
-const version_title_03 = "";
-const version_title_04 = "";
-const version_title_05 = "";
-const version_title_06 = "";
-const version_title_07 = "";
+const version_title_01 = '[Manual] Version: ';
+const version_title_02 = '';
+const version_title_03 = '';
+const version_title_04 = '';
+const version_title_05 = '';
+const version_title_06 = '';
+const version_title_07 = '';
 
-const version_num_01 = "0.0.1";
-const version_num_02 = "";
-const version_num_03 = "";
-const version_num_04 = "";
-const version_num_05 = "";
-const version_num_06 = "";
-const version_num_07 = "";
+const version_num_01 = '0.0.1';
+const version_num_02 = '';
+const version_num_03 = '';
+const version_num_04 = '';
+const version_num_05 = '';
+const version_num_06 = '';
+const version_num_07 = '';
 
 /* Copyright */
-const copyright_text = "Copyright © [yyyy] [Group Name]. Built: [yyyy-mm-dd].";
+const copyright_text = 'Copyright © [yyyy] [Group Name]. Built: [yyyy-mm-dd].';
 
 /* Others */
 const intro_content  = 'intro';   // Default content page.
 const search_content = 'search';  // Search page.
 
 /* Homepage Link */
-const homepage_url  = "https://github.com/jcs090218/API-Reference-Template";  // Link to your homepage.
-const homepage_text = "api-ref-tem.github";                                   // Text represent your homepage.
+const homepage_url  = 'https://github.com/jcs090218/API-Reference-Template';  // Link to your homepage.
+const homepage_text = 'api-ref-tem.github';                                   // Text represent your homepage.
 
 
 // Content extension to load.
@@ -55,7 +55,7 @@ const homepage_text = "api-ref-tem.github";                                   //
 const content_extension = '.md';
 
 /* Search Input Text */
-const si_manual_placeholder = "Search manual...";
-const si_api_placeholder    = "Search scripting...";
+const si_manual_placeholder = 'Search manual...';
+const si_api_placeholder    = 'Search scripting...';
 
 const si_input_size = 17;  // character unit.
